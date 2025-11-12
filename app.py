@@ -19,4 +19,9 @@ def saudar(nome):
     return f"Olá, {nome}!"
 
 
+@app.route("/quadrado/<int:n>")
+def quadrado(n):
+    resultado = n * n
+    return f"{n}² = {resultado}"
+
 
