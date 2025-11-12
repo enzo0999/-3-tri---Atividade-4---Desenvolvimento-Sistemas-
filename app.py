@@ -25,3 +25,10 @@ def quadrado(n):
     return f"{n}² = {resultado}"
 
 
+@app.route("/home")
+def home():
+    return redirect("/")
+
+
+    
+
