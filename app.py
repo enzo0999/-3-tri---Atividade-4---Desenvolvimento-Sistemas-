@@ -13,3 +13,10 @@ def versao():
     return f"App v{versao}"
 
 
+@app.route("/saudar/<nome>")
+def saudar(nome):
+    nome = nome.capitalize()
+    return f"Olá, {nome}!"
+
+
+
