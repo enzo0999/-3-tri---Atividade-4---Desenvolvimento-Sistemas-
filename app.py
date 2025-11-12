@@ -30,5 +30,9 @@ def home():
     return redirect("/")
 
 
-    
+@app.route("/pagina")
+def pagina():
+    return render_template("pagina.html")
+
+
 
