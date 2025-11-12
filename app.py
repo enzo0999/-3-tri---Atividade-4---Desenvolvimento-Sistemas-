@@ -35,4 +35,13 @@ def pagina():
     return render_template("pagina.html")
 
 
+@app.route("/buscar/<item>")
+def buscar(item):
+    itens = ["maçã", "laranja", "banana", "uva"]
+    if item in itens:
+        return f"Item '{item}' encontrado!"
+    else:
+        return f"Item '{item}' não encontrado!"
 
+if __name__ == "__main__":
+    app.run(debug=True)
